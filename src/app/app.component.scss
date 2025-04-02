@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; // Повна висота екрана
+}
+
+app-header {
+  flex: 0 0 auto; // Фіксована висота
+}
+
+.content {
+  flex: 1 1 auto; // Займає весь доступний простір
+  overflow-y: auto; // Прокрутка, якщо контент виходить за межі
+}

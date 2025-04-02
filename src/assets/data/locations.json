@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Тіроль, Австрія",
+    "duration": "20 хв",
+    "height": 1200,
+    "image": "assets/images/au-tirol.jpg",
+    "coordinates": { "lat": 47.267, "lng": 11.393 }
+  },
+  {
+    "id": 2,
+    "name": "Доломіти, Італія",
+    "duration": "25 хв",
+    "height": 1400,
+    "image": "assets/images/au-tirol.jpg",
+    "coordinates": { "lat": 46.410, "lng": 11.847 }
+  },
+  {
+    "id": 3,
+    "name": "Інтерлакен, Швейцарія",
+    "duration": "30 хв",
+    "height": 1300,
+    "image": "assets/images/au-tirol.jpg",
+    "coordinates": { "lat": 46.686, "lng": 7.863 }
+  }
+]

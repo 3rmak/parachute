@@ -1,1 +1,18 @@
-<p>location-details works!</p>
+<section *ngIf="location" class="location-details">
+  <button class="arrow-btn" (click)="goToAllLocations()">
+    &#8592; Back to Locations
+  </button>
+
+  <h2>{{ location.name }}</h2>
+  <img [src]="location.image" [alt]="location.name">
+  <p><strong>Тривалість польоту:</strong> {{ location.duration }}</p>
+  <p><strong>Висота:</strong> {{ location.height }} м</p>
+  <!-- <div class="map">
+    <iframe
+      width="100%"
+      height="300px"
+      [src]="API_URL"
+      allowfullscreen
+    ></iframe>
+  </div> -->
+</section>

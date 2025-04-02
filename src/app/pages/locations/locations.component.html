@@ -1,1 +1,11 @@
-<p>locations works!</p>
+<section class="locations">
+  <h2>Доступні локації</h2>
+  <div class="location-list">
+    <div *ngFor="let loc of locations" class="location-card" (click)="openLocation(loc.id)">
+      <img [src]="loc.image" [alt]="loc.name">
+      <h3>{{ loc.name }}</h3>
+      <p>Тривалість: {{ loc.duration }}</p>
+      <p>Висота: {{ loc.height }} м</p>
+    </div>
+  </div>
+</section>
