@@ -12,17 +12,17 @@ export class AboutComponent {
   instructors = [
     {
       name: 'Peter A.',
-      description: 'Майстер спорту з парапланеризму, 15 років досвіду, більше 5000 успішних польотів.',
+      description: 'Master of Sports in paragliding, 15 years of experience, more than 5000 successful flights.',
       photo: 'assets/images/instructor1.jpg'
     },
     {
       name: 'Maria L.',
-      description: 'Сертифікований інструктор, експерт з аеродинаміки, спеціаліст з екстремальних польотів.',
+      description: 'He is a certified instructor, aerodynamics expert, and extreme flight specialist.',
       photo: 'assets/images/instructor2.jpeg'
     },
     {
       name: 'Taylor S.',
-      description: 'Тренер з міжнародним досвідом, проводить навчання в різних країнах світу.',
+      description: 'Trainer with international experience, conducts training in different countries of the world.',
       photo: 'assets/images/instructor3.jpeg'
     }
   ];
