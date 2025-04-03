@@ -1,0 +1,24 @@
+.services-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.service-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+}

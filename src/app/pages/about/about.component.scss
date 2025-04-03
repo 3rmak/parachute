@@ -1,0 +1,83 @@
+.about-section {
+  text-align: center;
+  padding: 8rem 5rem;
+  background: #f4f4f4;
+  position: relative;
+}
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 4rem;
+}
+.description {
+  font-size: 1.6rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 6rem;
+}
+.instructors {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  position: relative;
+}
+.instructor-card {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: white;
+  padding: 3rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.instructor-card.reversed {
+  flex-direction: row-reverse;
+}
+.image-container {
+  flex: 1;
+  max-width: 400px;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.instructor-info {
+  flex: 2;
+  text-align: left;
+}
+.instructor-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+.instructor-info p {
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Декоративні елементи для Apple-ефекту */
+.about-section::before,
+.about-section::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, rgba(255, 87, 34, 0.6), rgba(255, 193, 7, 0.6));
+  border-radius: 50%;
+  filter: blur(50px);
+}
+.about-section::before {
+  top: 10%;
+  left: -50px;
+}
+.about-section::after {
+  bottom: 10%;
+  right: -50px;
+}

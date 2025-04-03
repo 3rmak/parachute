@@ -1,1 +1,19 @@
-<p>about works!</p>
+<section class="about-section">
+  <h1 class="title">Про нас</h1>
+  <p class="description">
+    Ми - команда професійних інструкторів, які мають багаторічний досвід у парапланеризмі.
+    Наша місія - подарувати вам незабутні емоції та захоплюючі враження в мальовничих куточках Європи.
+  </p>
+  <div class="instructors">
+    <div *ngFor="let instructor of instructors; let i = index" 
+         class="instructor-card" [class.reversed]="i % 2 !== 0">
+      <div class="image-container">
+        <img [src]="instructor.photo" [alt]="instructor.name">
+      </div>
+      <div class="instructor-info">
+        <h2>{{ instructor.name }}</h2>
+        <p>{{ instructor.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
