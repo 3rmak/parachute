@@ -5,9 +5,6 @@
   min-height: 100vh;
 }
 
-/* Глобальні стилі для імпорту шрифтів (додайте до styles.scss) */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
 * {
   transition: color 0.2s ease, background-color 0.2s ease;
   letter-spacing: 0.02em;

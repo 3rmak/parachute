@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration production --base-href /parachute/",
+    "push:prod": "npx angular-cli-ghpages --dir=dist/parachute/browser --no-silent",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
