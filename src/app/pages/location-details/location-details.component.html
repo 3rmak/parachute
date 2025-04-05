@@ -1,15 +1,11 @@
 
 <div class="back-container">
   <img [src]="'/assets/icons/arrow-back.png'" />
-  <a routerLink="/locations" class="back-button">Повернутися до всіх локацій</a>
+  <a routerLink="/locations" class="back-button">To all locations</a>
 </div>
 
 <section class="location-details">
   <div class="location-details-container">
-    <!-- <div class="image-section">
-      <img [src]="location.image" [alt]="location.name" />
-    </div> -->
-
     <div class="image-section">
       <div
         class="carousel"
@@ -35,8 +31,8 @@
       <h1>{{ location.name }}</h1>
       <p class="description">{{ location.description }}</p>
       <p class="metrics">
-        Тривалість польоту: <strong>{{ location.duration }}</strong><br>
-        Висота старту: <strong>{{ location.height }} м</strong>
+        Flight duration: <strong>{{ location.duration }}</strong><br>
+        Start height: <strong>{{ location.height }} m</strong>
       </p>
       <!-- <div class="map">
         <iframe

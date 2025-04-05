@@ -3,5 +3,5 @@ export const environment = {
     emailjsServiceId: '',
     emailjsTemplateId: '',
     emailjsPublicKey: '',
-    emailjsReceiverEmail: ''
+    emailjsReceiverEmail: '',
 }

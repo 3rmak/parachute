@@ -1,10 +1,10 @@
 <section class="booking-section">
-  <h1 class="title">Бронювання</h1>
+  <h1 class="title">Reservation</h1>
   <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()" class="booking-form">
-    <input type="text" formControlName="name" placeholder="Ваше ім'я" required />
-    <input type="text" formControlName="contact" placeholder="Email / номер телефону" required />
-    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" formControlName="date" placeholder="Бажана дата польоту" required />
-    <button type="submit" [disabled]="bookingForm.invalid">Замовити зворотній зв'язок</button>
+    <input type="text" formControlName="name" placeholder="Your name" required />
+    <input type="text" formControlName="contact" placeholder="Email / contact" required />
+    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" formControlName="date" placeholder="Preferable flight date" required />
+    <button type="submit" [disabled]="bookingForm.invalid">Share contact</button>
   </form>
   
   <div class="links-container">

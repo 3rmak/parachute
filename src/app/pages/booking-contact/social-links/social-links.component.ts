@@ -9,9 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './social-links.component.scss'
 })
 export class SocialLinksComponent {
-  socialLinks = [
-    { name: 'YouTube', icon: 'assets/icons/youtube.png', url: 'https://youtube.com' },
-    { name: 'Instagram', icon: 'assets/icons/instagram.png', url: 'https://instagram.com' },
-    { name: 'WhatsApp', icon: 'assets/icons/whatsapp.png', url: 'https://wa.me/' }
-  ];
+  socialLinks: any = {};
+
+  ngOnInit() {
+    fetch('assets/data/social.json')
+      .then(res => res.json())
+      .then(data => this.socialLinks = data);
+  }
 }

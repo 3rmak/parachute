@@ -1,5 +1,5 @@
 <section class="locations-section">
-  <h1 class="title">Локації для польотів</h1>
+  <h1 class="title">Flight locations</h1>
   <div class="locations-container">
     <div *ngFor="let location of locations" class="location-card" routerLink="{{location.id}}">
       <div class="image-container">
@@ -8,7 +8,7 @@
       <div class="location-info">
         <h2>{{ location.name }}</h2>
         <p>{{ location.description }}</p>
-        <span class="details">Тривалість: {{ location.duration }} | Висота: {{ location.height }} м</span>
+        <span class="details">Duration: {{ location.duration }} | Height: {{ location.height }} m</span>
       </div>
     </div>
   </div>

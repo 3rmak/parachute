@@ -38,7 +38,7 @@ export class BookingContactComponent {
         Book date: ${formValues.date}
       `
     };
-
+    
     emailjs.send(
       environment.emailjsServiceId,
       environment.emailjsTemplateId,
@@ -46,12 +46,12 @@ export class BookingContactComponent {
       environment.emailjsPublicKey,
     )
     .then(() => {
-      alert('Лист надіслано успішно!');
+      alert('Contacts shared! You\'ll get a call soon');
       this.bookingForm.reset();
     })
     .catch(error => {
-      console.error('Помилка надсилання листа:', error);
-      alert('Сталася помилка. Спробуйте ще раз.');
+      console.error('Send email error:', error);
+      alert('Error while email sending. Try one more time');
     });
   }
 }

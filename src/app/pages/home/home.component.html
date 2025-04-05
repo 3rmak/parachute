@@ -1,7 +1,7 @@
-<section class="hero" [style.backgroundImage]="'url(' + heroContent.background + ')'">
+<section class="hero" [style.backgroundImage]="'url(' + homeContent.background + ')'">
     <div class="overlay">
-      <h1 class="title">{{ heroContent.title }}</h1>
-      <p class="subtitle">{{ heroContent.subtitle }}</p>
-      <button class="cta-button">Забронювати політ</button>
+      <h1 class="title">{{ homeContent.title }}</h1>
+      <p class="subtitle">{{ homeContent.subtitle }}</p>
+      <button class="cta-button" (click)="navigate()">Book a flight</button>
     </div>
   </section>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,9 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  heroContent = {
-    title: 'Тандемні польоти на параплані',
-    subtitle: 'Незабутні емоції в найкращих локаціях Європи',
-    background: 'assets/images/hero-bg.jpg'
-  };
+  homeContent: any = {}
+
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    fetch('assets/data/home.json')
+      .then(res => res.json())
+      .then(data => this.homeContent = data);
+  }
+
+  navigate() {
+    this.router.navigateByUrl('/booking-contact');
+  }
 }
