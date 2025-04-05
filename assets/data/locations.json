@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Tyrol, Austria",
+    "description": "An unforgettable flight over alpine landscapes with fantastic views",
+    "duration": "20 min",
+    "height": 1200,
+    "image": "assets/images/au-tirol.jpg",
+    "carousel": ["assets/images/au-tirol.jpg", "assets/images/not-found.png"],
+    "coordinates": { "lat": 47.267, "lng": 11.393 }
+  },
+  {
+    "id": 2,
+    "name": "Dolomites, Italy",
+    "description": "",
+    "duration": "25 min",
+    "height": 1400,
+    "image": "assets/images/it-dolomites.jpg",
+    "carousel": ["assets/images/it-dolomites.jpg", "assets/images/not-found.png"],
+    "coordinates": { "lat": 46.410, "lng": 11.847 }
+  },
+  {
+    "id": 3,
+    "name": "Interlaken, Switzerland",
+    "description": "",
+    "duration": "30 min",
+    "height": 1300,
+    "image": "assets/images/sw-interlaken.jpg",
+    "carousel": ["assets/images/sw-interlaken.jpg", "assets/images/not-found.png"],
+    "coordinates": { "lat": 46.686, "lng": 7.863 }
+  }
+]
