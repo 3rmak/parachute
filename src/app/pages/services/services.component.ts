@@ -32,7 +32,7 @@ export class ServicesComponent {
   ngAfterViewInit() {
     const cards = this.el.nativeElement.querySelectorAll('.card-back');
       cards.forEach((card: HTMLElement, index: number) => {
-        const imgSrc = '/assets/images/not-found.png'; // або service.imageUrl
+        const imgSrc = 'assets/images/not-found.png';
         this.renderer.setStyle(card, 'backgroundImage', `url(${imgSrc})`);
         this.renderer.setStyle(card, 'backgroundSize', 'cover');
         this.renderer.setStyle(card, 'backgroundPosition', 'center');
