@@ -1,10 +1,13 @@
 <section class="booking-section">
   <h1 class="title">Бронювання</h1>
-  <form class="booking-form">
-    <input type="text" placeholder="Ваше ім'я" required>
-    <input type="email" placeholder="Email" required>
-    <input type="date" required>
-    <button type="submit">Забронювати</button>
+  <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()" class="booking-form">
+    <input type="text" formControlName="name" placeholder="Ваше ім'я" required />
+    <input type="text" formControlName="contact" placeholder="Email / номер телефону" required />
+    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" formControlName="date" placeholder="Бажана дата польоту" required />
+    <button type="submit" [disabled]="bookingForm.invalid">Замовити зворотній зв'язок</button>
   </form>
-  <app-social-links></app-social-links>
+  
+  <div class="links-container">
+    <app-social-links></app-social-links>
+  </div>
 </section>

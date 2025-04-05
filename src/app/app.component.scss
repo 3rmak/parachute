@@ -1,13 +1,35 @@
-:host {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; // Повна висота екрана
+/* додайте це до app.component.scss */
+.app-container {
+  width: 100%;
+  // padding-top: 90px; /* Має бути таким же як висота шапки */
+  min-height: 100vh;
 }
 
-app-header {
-  flex: 0 0 auto; // Фіксована висота
+/* Глобальні стилі для імпорту шрифтів (додайте до styles.scss) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  letter-spacing: 0.02em;
 }
 
-.content {
-  flex: 1 1 auto; // Займає весь доступний простір
+html {
+  font-size: 62.5%; /* Для зручного rem масштабування (1rem = 10px) */
+}
+
+body {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Додаткові анімації для преміум-вигляду */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,13 +1,35 @@
-<header class="navbar">
-  <div class="logo">LOGO-PARACHUTE</div>
-  <nav>
-    <ul>
-      <li><a routerLink="/">Parachute-main</a></li>
-      <li><a routerLink="/about">About</a></li>
-      <li><a routerLink="/services">Services</a></li>
-      <li><a routerLink="/locations">Locations</a></li>
-      <!-- <li><a routerLink="/faq">FAQ</a></li> -->
-      <li><a routerLink="/booking-contact" class="cta">Book</a></li>
+<header class="main-header" [ngClass]="{'scrolled': isScrolled}">
+  <div class="header-container">
+    <div class="logo">
+      <a routerLink="/">
+        <img src="assets/images/logo.png" alt="Parachute Logo">
+      </a>
+    </div>
+    
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Main</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+        <li><a routerLink="/locations" routerLinkActive="active">Locations</a></li>
+        <li><a routerLink="/booking-contact" class="cta" routerLinkActive="active"><span>Book</span></a></li>
+      </ul>
+    </nav>
+    
+    <div class="mobile-menu-toggle" [ngClass]="{'active': isMobileMenuOpen}" (click)="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  
+  <div class="mobile-nav" [ngClass]="{'open': isMobileMenuOpen}">
+    <ul class="mobile-nav-list">
+      <li style="--i: 0"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">Main</a></li>
+      <li style="--i: 1"><a routerLink="/about" routerLinkActive="active" (click)="closeMobileMenu()">About</a></li>
+      <li style="--i: 2"><a routerLink="/services" routerLinkActive="active" (click)="closeMobileMenu()">Services</a></li>
+      <li style="--i: 3"><a routerLink="/locations" routerLinkActive="active" (click)="closeMobileMenu()">Locations</a></li>
+      <li style="--i: 4"><a routerLink="/booking-contact" class="cta" routerLinkActive="active" (click)="closeMobileMenu()">Book</a></li>
     </ul>
-  </nav>
+  </div>
 </header>

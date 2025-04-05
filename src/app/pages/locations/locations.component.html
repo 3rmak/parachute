@@ -1,11 +1,15 @@
-<section class="locations">
-  <h2>Доступні локації</h2>
-  <div class="location-list">
-    <div *ngFor="let loc of locations" class="location-card" (click)="openLocation(loc.id)">
-      <img [src]="loc.image" [alt]="loc.name">
-      <h3>{{ loc.name }}</h3>
-      <p>Тривалість: {{ loc.duration }}</p>
-      <p>Висота: {{ loc.height }} м</p>
+<section class="locations-section">
+  <h1 class="title">Локації для польотів</h1>
+  <div class="locations-container">
+    <div *ngFor="let location of locations" class="location-card" routerLink="{{location.id}}">
+      <div class="image-container">
+        <img [src]="location.image" [alt]="location.name">
+      </div>
+      <div class="location-info">
+        <h2>{{ location.name }}</h2>
+        <p>{{ location.description }}</p>
+        <span class="details">Тривалість: {{ location.duration }} | Висота: {{ location.height }} м</span>
+      </div>
     </div>
   </div>
 </section>

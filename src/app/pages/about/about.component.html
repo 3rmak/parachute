@@ -1,18 +1,22 @@
 <section class="about-section">
-  <h1 class="title">About</h1>
-  <p class="description">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About</h2>
+      <p>
     We are a team of professional instructors with many years of experience in paragliding.
     Our mission is to give you unforgettable emotions and exciting experiences in the most picturesque parts of Europe.
-  </p>
-  <div class="instructors">
-    <div *ngFor="let instructor of instructors; let i = index" 
-         class="instructor-card" [class.reversed]="i % 2 !== 0">
-      <div class="image-container">
-        <img [src]="instructor.photo" [alt]="instructor.name">
-      </div>
-      <div class="instructor-info">
-        <h2>{{ instructor.name }}</h2>
-        <p>{{ instructor.description }}</p>
+      </p>
+    </div>
+
+    <div class="instructors">
+      <div class="instructor" *ngFor="let instructor of instructors; let i = index" [class.reverse]="i % 2 !== 0">
+        <div class="instructor-photo">
+          <img [src]="instructor.photo" [alt]="instructor.name" />
+        </div>
+        <div class="instructor-info">
+          <h3>{{ instructor.name }}</h3>
+          <p>{{ instructor.description }}</p>
+        </div>
       </div>
     </div>
   </div>

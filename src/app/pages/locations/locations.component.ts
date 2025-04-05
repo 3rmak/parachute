@@ -5,6 +5,7 @@ import { Router, RouterModule } from '@angular/router';
 interface Location {
   id: number;
   name: string;
+  description: string;
   duration: string;
   height: number;
   image: string;
